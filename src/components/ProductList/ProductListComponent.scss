@@ -1,0 +1,89 @@
+.product-list-wrap {
+    margin-top: 5rem;
+
+    .react-multi-carousel-track {
+        height: 400px;
+
+        .react-multi-carousel-item {
+            width: 305px !important;
+
+            .product-item {
+                margin-right: 1rem;
+
+                h4 {
+                    margin: 0;
+                    color: var(--ash);
+                    font-weight: 500;
+                }
+
+                p {
+                    margin: 0.2rem 0 1rem 0;
+                    font-weight: 700;
+
+                    span {
+                        color: var(--ash);
+                        font-weight: 400;
+                    }
+                }
+
+                .image-wrap {
+                    width: 100%;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                ul {
+                    list-style: none;
+                    color: var(--blue);
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-evenly;
+                    text-transform: uppercase;
+                    font-weight: 700;
+                    font-size: 13px;
+                    margin: 1rem;
+
+                    li:nth-child(1), li:nth-child(3) {
+                        cursor: pointer;
+                    }
+                }
+            }
+
+        }
+    }
+
+    .react-multiple-carousel__arrow {
+        background: var(--white);
+        border: 1px solid var(--black);
+    }
+
+    .react-multiple-carousel__arrow::before {
+        color: var(--black);
+    }
+
+    .react-multiple-carousel__arrow--left {
+        right: 4rem;
+        left: inherit;
+        bottom: 0;
+    }
+
+    .react-multiple-carousel__arrow--right {
+        right: 1rem;
+        bottom: 0;
+    }
+
+}
+
+@media screen and (min-width: 900px) {
+    .product-list-wrap {
+
+        // .react-multi-carousel-track {
+        .react-multi-carousel-dot-list {
+            display: none !important;
+        }
+    }
+
+    // }
+}
